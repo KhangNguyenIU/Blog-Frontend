@@ -6,10 +6,10 @@ import PreviewCover from "../Components/crud/PreviewCover";
 import Notification from "../Components/Notification";
 import CategoryList from "../Components/crud/CategoryList";
 import CrudNavBar from "../Components/crud/CrudNavbar";
-import Modal from "../Components/modal/Modal";
 import { getAllCategories } from "../api/category.api";
 import { convertBlobToBinary } from "../utils/convertImageType";
 import { createBlog } from "../api/blog.api";
+
 const NewStory = () => {
   const [title, setTitle] = useState("");
   const [cover, setCover] = useState("");

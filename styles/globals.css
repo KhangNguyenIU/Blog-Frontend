@@ -2,8 +2,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -13,4 +11,64 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.graf{
+ font-family: 'Hina Mincho', serif !important;
+ margin-bottom: 2rem !important;
+}
+
+.graf--p{
+  margin-bottom: 3rem !important;
+  line-height: 3rem !important;
+  font-size: 1.6rem !important;
+}
+
+.graf--h2{
+  line-height: 3rem !important;
+  font-size: 1.8rem !important;
+  font-family: 'Hina Mincho', serif;
+}
+
+.graf--h3{
+  line-height: 3rem !important;
+  font-size: 1.7rem !important;
+  font-family: 'Hina Mincho', serif !important;
+}
+
+.word-wrap{
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.container-wrapper{
+  width: 1000px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+[contenteditable=true]:empty:before{
+  content: attr(placeholder);
+  pointer-events: none;
+  display: block; /* For Firefox */
+}
+
+@media screen and (max-width:900px) {
+  .graf--layoutOutsetLeft{
+    float: none !important;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+
+  }
+
+  .container-wrapper{
+    width: 100%;
+    padding: 1rem;
+  }
 }

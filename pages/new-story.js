@@ -73,7 +73,7 @@ const NewStory = () => {
         setIsUploadBackground={setIsUploadBackground}
       />
       <div className="container-wrapper">
-        {/* <MyEditor setContent={setContent} content={content} /> */}
+        <MyEditor setContent={setContent} content={content} />
         {/* <button onClick={()=>modalRef.current()}>
           Click
         </button> */}

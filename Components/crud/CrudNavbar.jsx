@@ -14,7 +14,6 @@ const CrudNavBar = ({modalRef, title,background, content }) => {
           <Link href={'/'}>
             <Image src={brandingImage} width={32} height={32} />
           </Link>
-          <h1 className="redcolor">TEST</h1>
         </div>
        
         <div className="flex items-center">

@@ -1,5 +1,4 @@
 import '../styles/globals.css'
-import 'Dante2/node_modules/draft-js/dist/Draft.css'
 import Head from 'next/head'
 
 function MyApp({ Component, pageProps }) {

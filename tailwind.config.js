@@ -6,9 +6,12 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily:{
-      'sans' :['Nunito' ,'sans'],
-      'serif' :['Hina Mincho'],
-      'body':['Lora']
+      'nunito-sans' :['Nunito' ,'sans'],
+      'nunito-serif' :['Nunito' ,'serif'],
+      'hina-sans' :['Hina Mincho','sans'],
+      'hina-serif' :['Hina Mincho','serif'],
+      'lora-sans':['Lora','sans'],
+      'lora-serif':['Lora','serif'],
     }
   },
   plugins: [],

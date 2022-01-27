@@ -13,7 +13,6 @@ export const checkBlogConditionToBeSubmit = (title, background, content) => {
         content.blocks.map((block, index) => {
             if (block.type !== 'image') len += block.text.length
         })
-        console.log({ len })
         return len >= 50
     }
     return false

@@ -24,3 +24,9 @@ export const googleLogin = (tokenId) => axios({
     withCredentials: true,
     data: tokenId
 })
+
+export const signout = () => axios({
+    method:'get',
+    url : '/auth/signout',
+    withCredentials: true
+})

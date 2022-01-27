@@ -35,7 +35,7 @@ export const AuthIcon = (props) => {
         </span>
       )}
 
-      <AuthoModal modalRef={modalRef} />
+      <AuthModal modalRef={modalRef} />
       <SideNavBar openSideBar={open} setOpenSideBar={setOpen} />
     </div>
   );

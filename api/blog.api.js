@@ -10,15 +10,15 @@ export const createBlog = (blog) => axios({
 })
 
 
+// export const getBlogs = (page, limit) => axios({
+//     method: 'get',
+//     url: `/blogs?page=${page}&limit=${limit}`
+// })
+
 export const getBlogs = (page, limit) => axios({
     method: 'get',
-    url: `/blogs?page=${page}&limit=${limit}`
+    url: `/blogs`
 })
-
-// export const getBlogs = (url) => axios({
-//     method: 'get',
-//     url: url
-// })
 
 export const getAllCategories = () => axios({
     method: 'get',

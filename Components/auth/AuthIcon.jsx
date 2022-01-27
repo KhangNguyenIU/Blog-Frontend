@@ -1,8 +1,7 @@
 import React,{useState, useEffect,useRef} from "react";
 import { useSelector } from "react-redux";
 import Image from "next/image";
-import { BsSearch } from "react-icons/bs";
-import AuthModal from "./authModal";
+import AuthModal from "./AuthModal";
 import SideNavBar from "../layout/SideNavBar";
 /**
  * @author
@@ -36,7 +35,7 @@ export const AuthIcon = (props) => {
         </span>
       )}
 
-      <AuthModal modalRef={modalRef} />
+      <AuthoModal modalRef={modalRef} />
       <SideNavBar openSideBar={open} setOpenSideBar={setOpen} />
     </div>
   );

@@ -45,8 +45,7 @@ const BlogkPage = ({ blog }) => {
     <Head>
       <title>{blog.title}</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <meta http-equiv="REFRESH" content="1800" />
+
       <meta name="description" content={blog.exceprt} />
       <meta name="keywords" content={`review ${blog.title}`} />
       <meta name="googlebot" content="noarchive" />

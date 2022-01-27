@@ -15,6 +15,11 @@ export const getBlogs = (page, limit) => axios({
     url: `/blogs?page=${page}&limit=${limit}`
 })
 
+// export const getBlogs = (url) => axios({
+//     method: 'get',
+//     url: url
+// })
+
 export const getAllCategories = () => axios({
     method: 'get',
     url: '/category'
@@ -24,6 +29,11 @@ export const fetchBlogById = (id) => axios({
     method: 'get',
     url: '/blogs/' + id,
 })
+
+// export const fetchBlogBySlug = (id) => axios({
+//     method: 'get',
+//     url: '/blogs/' + id,
+// })
 
 export const deleteBlogById = (id) => axios({
     method: 'delete',

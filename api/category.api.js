@@ -11,5 +11,4 @@ export const createNewCategory = (category)=> axios({
     method: 'post',
     url :'/category',
     data: category,
-  
 })

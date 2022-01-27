@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'Home.module.scss';
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.redcolor{
+  color:red;
+}
+
+.list-item{
+  font-size: 1rem;
+  margin-bottom: .5rem;
+  cursor: pointer;
+  color:gray;
+  transition:hover 150ms;
+  &:hover{
+    color: black;
+  }
+}
+.blue-glassmorphism{
+  background: rgba( 50, 52, 54, 0.2  );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 9.5px );
+-webkit-backdrop-filter: blur( 9.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+.word-wrap{
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.container-wrapper{
+  max-width: 1000px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.container-wrapper-md{
+  max-width: 1200px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+[contenteditable=true]:empty:before{
+  content: attr(placeholder);
+  pointer-events: none;
+  display: block; /* For Firefox */
+}
+
+.card-button{
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Nunito", sans-serif;
+  color: #696969;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 10px;
+  position: relative;
+  height: 30px;
+  &:hover{
+
+      color:#a46497;
+  }
+
+  &::after{
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 1px;
+      background: #444444;
+      top: 0;
+      right: -10px;
+  }
+
+  &::before{
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 1px;
+      background: #444444;
+      top: 0;
+      left: -10px;
+  }
+}
+.section-text-primary{
+    color: #696969;
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    margin: 10px;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 4.5rem;
+        height: 1.5px;
+        background-color: #664E88;
+        top: 25px;
+        left:15%;
+    }
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+

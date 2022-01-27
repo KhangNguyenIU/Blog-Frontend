@@ -37,7 +37,7 @@ export const mapClassName = block => {
 const styleAtPosition = (arr, text)=>{
     // console.log({arr, text})
     return (
-        <div>
+        <div className="graf graf--p">
             {
                 arr.map((span,index)=>(
                     <span 
@@ -67,7 +67,7 @@ const generateFontWeight =(type) =>{
 
 const splitToSmallSpan = (block) => {
     let temp = [...block.inlineStyleRanges].sort((a, b) => a.offset - b.offset)
-    console.log({temp})
+    // console.log({temp})
     let stack = [[0, temp[0].offset, null]]
     for (let arr of temp) {
         let prev = stack[stack.length - 1]
@@ -88,7 +88,7 @@ const splitToSmallSpan = (block) => {
         }
     }
     stack.push([stack[stack.length - 1][1],block.text.length,null])
-    console.log({stack })
+    // console.log({stack })
     return stack
 }
 

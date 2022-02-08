@@ -30,7 +30,7 @@ export const AuthIcon = (props) => {
           </div>
         </div>
       ) : (
-        <span className="py-1 px-4 rounded-full border-[1px] border-gray-600 flex justify-center items-center cursor-pointer hover:border-black text-[1rem]">
+        <span className="py-1 px-4 rounded-full border-[1px] border-gray-600 flex justify-center items-center cursor-pointer hover:border-black text-[12px] md:text-[1rem] text-gray-600">
           <button onClick={() => modalRef.current()}>Login</button>
         </span>
       )}

@@ -287,14 +287,20 @@ $dante-font-family-mono: 'Lora';
 
 @media (max-width: 500px) {
 
+  .graf--p{
+    margin-bottom: 2rem !important;
+  line-height: 2.2rem !important;
+  font-size: 1.2rem !important;
+  color: $color-primary-light-grey !important;
+  }
   .graf--h2 {
-    font-size: 2.6em;
+    font-size: 2em;
   }
   .graf--h3 {
-    font-size: 1.6em;
+    font-size: 1.2em;
   }
   .graf--h4 {
-    font-size: 1.4em;
+    font-size: 1em;
   }
 
 }
@@ -328,7 +334,7 @@ $dante-font-family-mono: 'Lora';
 
   .container-wrapper{
     width: 100%;
-    padding: 1rem;
+    padding: .5rem;
   }
 }
 

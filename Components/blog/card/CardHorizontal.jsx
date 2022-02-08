@@ -3,6 +3,8 @@ import Image from "next/image";
 import { convertToLocaleDate } from "../../../utils/datehandle";
 import { useRouter } from "next/router";
 import {motion} from 'framer-motion'
+import { smartCutString } from "../../../utils/smartCutString";
+import {BsBookmark} from 'react-icons/bs'
 /**
  * @author
  * @function CardHorizontal
@@ -24,23 +26,23 @@ export const CardHorizontal = ({blog}) => {
           <Image
               src={blog.user.avatar}
               className=" rounded-full object-cover"
-              width={32}
-              height={32}
+              width={28}
+              height={28}
             />
           </div>
-          <span className="ml-3 font-medium ">{blog.user.username}</span>
+          <span className="ml-3 font-medium text-[15px] ">{blog.user.username}</span>
         </div>
-        <h1 className="font-lora-serif text-2xl font-medium italic">{blog.title}</h1>
-        <p className="text-[12px] text-[#292929]">
-          {blog.exceprt}
+        <h1 className="font-lora-serif text-[18px] md:text-2xl font-medium italic leading-5 mb-2">{blog.title}</h1>
+        <p className="text-[12px] text-[#292929] mb-1 font-hina-serif hidden md:block">
+          {smartCutString(blog.exceprt,100)}
         </p>
-        <div className="flex justify-between text-gray-600 text-sm">
+        <div className="flex justify-between text-gray-600  text-[11px] md:text-[13px]">
           <div>
             <span className="">{convertToLocaleDate(blog.created_at)}</span>
             <span className="ml-3"> 4 min read </span>
           </div>
           <div>
-            <button>click</button>
+            <BsBookmark/>
           </div>
         </div>
       </div>

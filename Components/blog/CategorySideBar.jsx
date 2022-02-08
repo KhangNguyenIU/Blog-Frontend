@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 /**
 * @author
 * @function CategorySidePart
@@ -11,6 +12,7 @@ export const CategorySidePart = (props) => {
     <div className='flex flex-col'>
         <h1 className='font-hinano-sans text-[16px] font-medium text-[#292929] mt-3'> Recommended Topic</h1>
         <motion.div 
+        href='/'
         initial={{y:-50}}
         animate={{y:0}}
         className="flex flex-wrap mt-5 md:pr-6">
